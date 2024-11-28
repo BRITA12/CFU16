@@ -1,0 +1,27 @@
+#Brithany Sanchez
+#Period 1-2
+#12/02/2024
+
+import simplegui
+
+def draw_handler(canvas):
+    #all drawing happens here
+    #canvas.draw_circle(centerXY, radius, line_width, color)
+   
+    #face
+    canvas.draw_circle((100,100), 100, 3, "red")
+    #left eye
+    canvas.draw_circle((60,70), 10, 3, "red")
+    #right eye
+    canvas.draw_circle((140,70), 10, 3, "red")
+    #mouth
+    canvas.draw_circle((100,150), 30, 5, "red")
+    #nose
+    canvas.draw_circle((100,100), 10, 3, "red")
+
+#library.create_frame(title, width, height)
+
+frame = simplegui.create_frame("CFU16 Happy Circles",200,200)
+frame.set_canvas_background("rgb(0000, 0000, 0000)")
+frame.set_draw_handler(draw_handler)
+frame.start()
